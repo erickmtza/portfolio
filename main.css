@@ -8,41 +8,84 @@ html {
 }
 
 .header-nav {
-    border-bottom: 1px solid black;
+    position: absolute;
+    width: 100%;
 }
 
 .social-links {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
+    padding-top: 10px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #19d7e5;
 }
 
 header {
     text-align: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(img-icons/glenn-carstens-peters-203007-unsplash\ 1.jpg);
+    color: white;
 }
 
 h1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    font-size: 22px;
 }
 
-hr {
+.traits {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 70px;
+    display: none;
+}
+
+.line-break {
     margin: auto;
-    display: block;
     border: 0;
     margin-top: 5px;
     margin-bottom: 5px;
-    max-width: 500px;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(241, 238, 238, 0.75), rgba(0, 0, 0, 0));
 }
 
 
 .hero-section {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: none;
+    font-size: 40px;
+}
+
+.view-projects {
+    border: 1px solid white;
+    border-radius: 6px;
+    background: none;
+    color: white;
+    padding: 7px 18px;
+    margin-top: 50px;
+}
+
+.view-projects:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px 1px rgba(253, 253, 253, 0.925);
 }
 
 .web-dev {
@@ -51,16 +94,40 @@ hr {
 
 .about-me {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    height: 100vh;
+    background-color: black;
+}
+
+.about-me-2 {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+}
+
+.project img {
+    max-width: 100%;
 }
 
 .project {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.description {
+    margin: 10px 0px;
+}
+
+.project button {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 6px;
+    background: none;
+    color: rgb(0, 0, 0);
+    padding: 7px 0px;
+    width: 70px;
 }
 
 footer {
@@ -70,24 +137,23 @@ footer {
 }
 
 @media screen and (min-width: 420px) {
+    h1 {
+        text-align: left;
+        padding: 5px 5px;;
+    }
+
     .social-links {
         justify-content: flex-end;
     }
 
     .social-links li {
-        margin-right: 20px;
+        margin-right: 25px;
     }
 }
 
 @media screen and (min-width: 700px) {
     .hero-section {
-        display: flex;
         text-align: end;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-text {
         margin-left: auto;
         margin-right: auto;
     }
@@ -99,8 +165,6 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-
-
     .portfolio {
         margin-left: auto;
         margin-right: auto;
@@ -110,5 +174,11 @@ footer {
     .project {
         width: 300px;
         display: inline-block;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .project-desc {
+        padding: 10px 0px;
     }
 }

@@ -4,22 +4,23 @@
     <title>HTML wireframe</title>
     <meta charset="utf-8">
     <meta name="description" content="Erick Martinez Portfolio">
+    <meta name="theme-color" content="#0e3c3f">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <nav role="navigation" class="header-nav">
         <ul class="social-links">
-            <li>GitHub</li>
-            <li>LinkedIn</li>
+            <li><a href="https://github.com/erickmtza" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/erick-martinez-169099162/" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
     <main role="main">
         <header role="banner">
-            <h1>Hi! I'm Erick Martinez</h1>
+            <h1>&gt; <span class="hello">Hi. I'm Erick Martinez</span></h1>
             <div class="traits">
                 <p>Web Developer</p>
-                <hr>
+                <hr class="line-break">
                 <p>Limitless</p>
             </div>
             <div class="hero-section">
@@ -36,29 +37,33 @@
         </header>
 
         <div class="about-me">
-            <h2>About Me</h2>
-            <ul>
-                <li>Strict enforcer of 'Try everything at least once'</li>
-                <li>Synthwave is my life's official genre</li>
-                <li>and oh the internet, the reason I am here</li>
-            </ul>
+            <div class="about-me-2">
+                <h2>About Me</h2>
+                <ul>
+                    <li>Strict enforcer of 'Try everything at least once'</li>
+                    <li>Synthwave is my life's official genre</li>
+                    <li>and oh the internet, the reason I am here</li>
+                </ul>
+            </div>
         </div>
 
         <div class="portfolio">
             <div class="project">
-                <img src="" alt="">
+                <img src="img-icons/quiz-app.PNG" alt="World Cup knowledge quiz">
                 <div class="project-desc">
                     <p>Quiz App</p>
                     <p>Tech used:</p>
-                </div>
-                <p class="description">A simple app that asks a series of questions about the famous sporting event known as the World Cup. Check it out:</p>
+                    <p class="description">A simple app that asks a series of questions about the famous sporting event known as the World Cup. Check it out:</p>
                 <button>App</button>
                 <button>Repo</button>
+                </div>
             </div>
-
         </div>
         
     </main>
     <footer role="content-info">Erick Martinez</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
