@@ -1,10 +1,15 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
 }
 
 .header-nav {
@@ -19,12 +24,12 @@ html {
     padding-top: 10px;
 }
 
-a:link, a:visited {
+.social-links a:link, .social-links a:visited {
     color: white;
     text-decoration: none;
 }
 
-a:hover {
+.social-links a:hover {
     color: #19d7e5;
 }
 
@@ -63,7 +68,6 @@ h1 {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(241, 238, 238, 0.75), rgba(0, 0, 0, 0));
 }
 
-
 .hero-section {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -71,6 +75,10 @@ h1 {
     left: 50%;
     display: none;
     font-size: 30px;
+}
+
+.view-projects:hover {
+    cursor: pointer;
 }
 
 .view-projects {
@@ -107,14 +115,24 @@ h1 {
     color: white;
 }
 
+.portfolio {
+    display: flex;
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+.swipe {
+    text-align: center;
+}
+
 .project img {
     max-width: 100%;
 }
 
 .project {
+    min-width: 100%;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 50px 30px 0px;
 }
 
 .description {
@@ -125,9 +143,22 @@ h1 {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 6px;
     background: none;
-    color: rgb(0, 0, 0);
     padding: 7px 0px;
     width: 70px;
+}
+
+.project a:link, .social-links a:visited {
+    text-decoration: none;
+}
+
+.project button:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.project a:first-of-type button {
+    margin-right: 40px;
 }
 
 footer {
@@ -136,10 +167,13 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-height: 360px) {
+@media screen and (max-height: 380px) {
     .view-projects {
-       margin-top: 22px; 
+       margin-top: 0px; 
     }
+    .hero-text {
+        font-size: 30px;
+     }
 }
 
 @media screen and (min-width: 420px) {
@@ -175,16 +209,17 @@ footer {
 
 @media screen and (min-width: 1000px) {
     .portfolio {
+        text-align: center;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
     }
 
     .project {
+        min-width: 300px;
         width: 300px;
         display: inline-block;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
     }
 
     .project-desc {
