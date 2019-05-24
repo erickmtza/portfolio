@@ -75,6 +75,12 @@ h1 {
     left: 50%;
     display: none;
     font-size: 30px;
+    min-width: 320px;
+    max-width: 900px;
+}
+
+.list-title {
+    margin-bottom: 20px;
 }
 
 .view-projects:hover {
@@ -97,7 +103,14 @@ h1 {
 }
 
 .web-dev {
-    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+}
+
+.icons {
+    width: 80px;
+    height: 80px;
 }
 
 .about-me {
@@ -167,6 +180,20 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-height: 815px) and (max-width: 420px) {
+    .icons {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-height: 420px) and (max-width: 815px) {
+    .icons {
+        width: 35px;
+        height: 35px;
+    }
+}
+
 @media screen and (max-height: 380px) {
     .view-projects {
        margin-top: 0px; 
@@ -198,7 +225,6 @@ footer {
 
     .hero-section {
         text-align: end;
-        font-size: 45px;
     }
 
     .view-projects {
