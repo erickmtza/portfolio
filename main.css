@@ -21,7 +21,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    padding-top: 10px;
+    padding-top: 2px;
 }
 
 .social-links a:link, .social-links a:visited {
@@ -46,7 +46,7 @@ header {
 }
 
 h1 {
-    padding-top: 30px;
+    padding-top: 40px;
     font-size: 22px;
 }
 
@@ -111,6 +111,11 @@ h1 {
 .icons {
     width: 80px;
     height: 80px;
+}
+
+.social-icons {
+    width: 45px;
+    height: 45px;
 }
 
 .about-me {
