@@ -1,6 +1,6 @@
 'use strict';
 
-$(function fades() {
+$(function actions() {
     $('.traits').fadeIn(2000, fadeout());
     heroFadeIn();
     $('.portfolio').on('mousewheel DOMMouseScroll', function(event){
