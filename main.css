@@ -21,7 +21,7 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    padding-top: 2px;
+    padding-top: 8px;
 }
 
 .social-links a:link, .social-links a:visited {
@@ -31,6 +31,7 @@ body {
 
 .social-links a:hover {
     color: #19d7e5;
+    border-bottom: 1px solid white;
 }
 
 header {
@@ -46,7 +47,7 @@ header {
 }
 
 h1 {
-    padding-top: 40px;
+    padding-top: 35px;
     font-size: 22px;
 }
 
@@ -75,6 +76,7 @@ h1 {
     left: 50%;
     display: none;
     font-size: 30px;
+    width: 65vw;
     min-width: 320px;
     max-width: 900px;
 }
@@ -153,6 +155,10 @@ h1 {
     margin: 30px 50px 30px 0px;
 }
 
+.project-name {
+    font-weight: bold;
+}
+
 .description {
     margin: 10px 0px;
 }
@@ -185,17 +191,41 @@ footer {
     text-align: center;
 }
 
+.footer-links {
+    color: #238e96;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 @media screen and (max-height: 815px) and (max-width: 420px) {
     .icons {
-        width: 35px;
-        height: 35px;
+        width: 38px;
+        height: 38px;
+    }
+
+    .about-me-list {
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (max-height: 420px) and (max-width: 815px) {
     .icons {
-        width: 35px;
-        height: 35px;
+        width: 38px;
+        height: 38px;
     }
 }
 
@@ -204,7 +234,7 @@ footer {
        margin-top: 0px; 
     }
     .hero-text {
-        font-size: 30px;
+        font-size: 25px;
      }
 }
 
@@ -255,5 +285,20 @@ footer {
 
     .project-desc {
         padding: 10px 0px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer-section {
+        width: 300px;
+        text-align: start;
+        padding: 10px;
+    }
+
+    .footer-section-title {
+        font-size: 20px;
     }
 }
