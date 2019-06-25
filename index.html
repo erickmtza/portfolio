@@ -12,8 +12,9 @@
 <body>
     <nav role="navigation" class="header-nav">
         <ul class="social-links">
-            <li><a href="https://github.com/erickmtza" target="_blank"><img class="social-icons" src="img-icons/github.svg"></img></a></li>
-            <li><a href="https://www.linkedin.com/in/erick-martinez-169099162/" target="_blank"><img class="social-icons" src="img-icons/linkedin.svg"></img></a></li>
+            <li><a href="https://github.com/erickmtza" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/erick-martinez-169099162/" target="_blank">Linkedin</a></li>
+            <li><a href="#content-info">Contact/Links</a></li>
         </ul>
     </nav>
     <main role="main">
@@ -38,16 +39,17 @@
                         <img class="icons" src="img-icons/NodeJs.svg"></img>
                         <img class="icons" src="img-icons/Express.svg"></img>
                         <img class="icons" src="img-icons/PostgreSql.svg"></img>
+                        <img class="icons" src="img-icons/JWT.svg"></img>
                     </div>
                 </div>
-                <a href="#portfolio"><button class="view-projects">View projects</button></a>
+                <a href="#projects-section"><button class="view-projects">View projects</button></a>
             </div>
         </header>
 
         <div class="about-me">
             <div class="about-me-2">
                 <h2>About Me</h2>
-                <ul>
+                <ul class="about-me-list">
                     <li>Strict enforcer of 'Try everything at least once'.</li>
                     <li>Synthwave is my life's official Music genre.</li>
                     <li>Admirer of the Earth's natural beauty.</li>
@@ -56,64 +58,85 @@
             </div>
         </div>
         
-        <p class="swipe">Swipe/Scroll &rarr;</p>
-        <div class="portfolio" id="portfolio">
-            
-            <div class="project">
-                <img src="img-icons/association-football.PNG" alt="Association Football">
-                <div class="project-desc">
-                    <p>Association Football</p>
-                    <p class="tech-stack">React.js, Node.js, Express, PostgreSql, JWT</p>
-                    <p class="description">Association Football's platform is a team management tool. Pick the players you want from the big leagues to craft the ultimate team based on your dream team. Or use it to keep track of your local team as a coach.</p>
-                    <a href="https://association-football.777areri.now.sh/" target="_blank"><button>App</button></a>
-                    <a href="https://github.com/erickmtza/association-football-client" target="_blank"><button>Repo</button></a>
+        <section class="projects-section" id="projects-section">
+            <h2 class="swipe">Projects</h2>
+            <p class="swipe">Swipe/Scroll &rarr;</p>
+            <div class="portfolio" id="portfolio">
+                        
+                <div class="project">
+                    <img src="img-icons/association-football.PNG" alt="Association Football">
+                    <div class="project-desc">
+                        <p class="project-name">Association Football</p>
+                        <p class="tech-stack">React.js, Node.js, Express, PostgreSql, JWT</p>
+                        <p class="description">Association Football's platform is a team management tool. Pick the players from the big leagues to craft the ultimate team based on your dream team. Or use it to keep track of your local team as a coach.</p>
+                        <a href="https://association-football.777areri.now.sh/" target="_blank"><button>App</button></a>
+                        <a href="https://github.com/erickmtza/association-football-client" target="_blank"><button>Repo</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="project">
-                <img src="img-icons/first-look.PNG" alt="Xplore international landing page">
-                <div class="project-desc">
-                    <p>Xplore</p>
-                    <p class="tech-stack">JS, CSS, jQuery, 3 third-party APIs</p>
-                    <p class="description">Search for a country and see links to travel guides and the exchange rate for the USD in hopes to reinforce a destination decision.</p>
-                    <a href="https://erickmtza.github.io/Xplore-International/" target="_blank"><button>App</button></a>
-                    <a href="https://github.com/erickmtza/Xplore-International" target="_blank"><button>Repo</button></a>
+                <div class="project">
+                    <img src="img-icons/first-look.PNG" alt="Xplore international landing page">
+                    <div class="project-desc">
+                        <p class="project-name">Xplore</p>
+                        <p class="tech-stack">JS, CSS, jQuery, 3 third-party APIs</p>
+                        <p class="description">Search for a country and see links to travel guides and the exchange rate for the USD in hopes to reinforce a destination decision.</p>
+                        <a href="https://erickmtza.github.io/Xplore-International/" target="_blank"><button>App</button></a>
+                        <a href="https://github.com/erickmtza/Xplore-International" target="_blank"><button>Repo</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="project">
-                <img src="img-icons/flipflop.PNG" alt="memory game board">
-                <div class="project-desc">
-                    <p>flipflop Memory Game</p>
-                    <p class="tech-stack">React.js, Node.js, Express, PostgreSql</p>
-                    <p class="description">flipflop Memory Game involves locating all matching tile pairs. Keeps track of user time to completion. Records are displayed in a arcade styled leaderboard with the fastest player times.</p>
-                    <a href="https://flipflop-memory-game.777areri.now.sh/" target="_blank"><button>App</button></a>
-                    <a href="https://github.com/erickmtza/flipflop-memory-game-client" target="_blank"><button>Repo</button></a>
+                <div class="project">
+                    <img src="img-icons/flipflop.PNG" alt="memory game board">
+                    <div class="project-desc">
+                        <p class="project-name">flipflop Memory Game</p>
+                        <p class="tech-stack">React.js, Node.js, Express, PostgreSql</p>
+                        <p class="description">flipflop Memory Game involves locating all matching tile pairs. Keeps track of user time to completion. Records are displayed in a arcade styled leaderboard with the fastest player times.</p>
+                        <a href="https://flipflop-memory-game.777areri.now.sh/" target="_blank"><button>App</button></a>
+                        <a href="https://github.com/erickmtza/flipflop-memory-game-client" target="_blank"><button>Repo</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="project">
-                <img src="img-icons/noteful.PNG" alt="note organizing app">
-                <div class="project-desc">
-                    <p>Note Organizer</p>
-                    <p class="tech-stack">React.js, Node.js, Express, PostgreSql</p>
-                    <p class="description">Functional note organizer. Notes are stored in folders for sorting/categorizing. Design still under construction.</p>
-                    <a href="https://noteful-client.777areri.now.sh/" target="_blank"><button>App</button></a>
-                    <a href="https://github.com/erickmtza/Note-organizer-with-React" target="_blank"><button>Repo</button></a>
+                <div class="project">
+                    <img src="img-icons/noteful.PNG" alt="note organizing app">
+                    <div class="project-desc">
+                        <p class="project-name">Note Organizer</p>
+                        <p class="tech-stack">React.js, Node.js, Express, PostgreSql</p>
+                        <p class="description">Functional note organizer. Notes are stored in folders for sorting/categorizing. Design still under construction.</p>
+                        <a href="https://noteful-client.777areri.now.sh/" target="_blank"><button>App</button></a>
+                        <a href="https://github.com/erickmtza/Note-organizer-with-React" target="_blank"><button>Repo</button></a>
+                    </div>
                 </div>
-            </div>
-            <div class="project">
-                <img src="img-icons/quiz-app.PNG" alt="World Cup knowledge quiz">
-                <div class="project-desc">
-                    <p>Quiz App</p>
-                    <p class="tech-stack">JS, CSS, jQuery</p>
-                    <p class="description">A simple app that asks a series of questions about the famous sporting event known as the World Cup.</p>
-                    <a href="https://erickmtza.github.io/quiz-app/" target="_blank"><button>App</button></a>
-                    <a href="https://github.com/erickmtza/quiz-app" target="_blank"><button>Repo</button></a>
+                <div class="project">
+                    <img src="img-icons/quiz-app.PNG" alt="World Cup knowledge quiz">
+                    <div class="project-desc">
+                        <p class="project-name">Quiz App</p>
+                        <p class="tech-stack">JS, CSS, jQuery</p>
+                        <p class="description">A simple app that asks a series of questions about the famous sporting event known as the World Cup.</p>
+                        <a href="https://erickmtza.github.io/quiz-app/" target="_blank"><button>App</button></a>
+                        <a href="https://github.com/erickmtza/quiz-app" target="_blank"><button>Repo</button></a>
+                    </div>
                 </div>
+                        
             </div>
-                    
-        </div>
+        </section>
         
     </main>
-    <footer role="content-info">Erick Martinez | Developer</footer>
+    <footer role="content-info" id="content-info">
+        <section class="footer-section">
+            <p class="footer-section-title">Connect</p>
+            <ul>
+                <li><a class="footer-links" href="https://www.linkedin.com/in/erick-martinez-169099162/" target="_blank">Linkedin</a></li>
+                <li><a class="footer-links" href="https://github.com/erickmtza" target="_blank">Github</a></li>
+            </ul>
+        </section>
+        <address class="footer-section">
+            <p class="footer-section-title">Contact</p>
+            <a class="footer-links" href="mailto:erick.martinez2013@gmail.com">erick.martinez2013@gmail.com</a>
+        </address>
+
+        <section class="footer-section">
+            <p class="footer-section-title">Erick Martinez | Developer</p>
+            <p>Houston, TX</p>
+        </section>
+
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
