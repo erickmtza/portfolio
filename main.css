@@ -85,6 +85,16 @@ h1 {
     margin-bottom: 20px;
 }
 
+.view-projects-link {
+    padding: 7px 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.view-projects-link:hover {
+    color: black;
+}
+
 .view-projects:hover {
     cursor: pointer;
 }
@@ -93,14 +103,11 @@ h1 {
     border: 1px solid white;
     border-radius: 6px;
     background: none;
-    color: white;
-    padding: 7px 18px;
     margin-top: 50px;
 }
 
 .view-projects:hover {
     background-color: white;
-    color: black;
     box-shadow: 0 0 10px 1px rgba(253, 253, 253, 0.925);
 }
 
@@ -161,6 +168,15 @@ h1 {
 
 .description {
     margin: 10px 0px;
+}
+
+.project-links {
+    padding: 10px 18px;
+    color: black;
+}
+
+.project-links:hover {
+    color: white;
 }
 
 .project button {
