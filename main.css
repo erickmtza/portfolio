@@ -263,7 +263,7 @@ ul {
      }
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 660px) {
     h1 {
         text-align: left;
         padding: 5px 5px;;
